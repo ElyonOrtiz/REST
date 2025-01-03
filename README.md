@@ -119,7 +119,7 @@ src/principal/java/
 ---
 
 ## Autor
-Desenvolvido por [Seu Nome](https://github.com/ElyonOrtiz). Contribuições e feedbacks são bem-vindos!
+Desenvolvido por [Elyon Ortiz](https://github.com/ElyonOrtiz). Contribuições e feedbacks são bem-vindos!
 
 ---
 
