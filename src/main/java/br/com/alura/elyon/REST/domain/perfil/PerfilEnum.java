@@ -1,4 +1,4 @@
-package br.com.alura.elyon.REST.domain.perrfil;
+package br.com.alura.elyon.REST.domain.perfil;
 
 public enum PerfilEnum {
     ADMINISTRADOR,

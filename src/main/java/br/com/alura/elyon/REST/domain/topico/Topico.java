@@ -31,10 +31,36 @@ public class Topico {
     @JoinColumn(name = "curso_id")
     private Curso curso;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "autor_id")
     private Usuario autor;
 
     @OneToMany(mappedBy = "topico")
     private List<Resposta> respostas;
+
+    public Topico(PerguntaDto pergunta) {
+        titulo = pergunta.titulo();
+        mensagem = pergunta.mensagem();
+        curso = pergunta.curso();
+        autor = pergunta.autor();
+
+    }
+
+    public void setTitulo(String titulo) {
+    }
+
+    public void setMensagem(String mensagem) {
+    }
+
+    public void setCurso(Curso curso) {
+    }
+
+    public void setAutor(Usuario autor) {
+    }
+
+    public void setDataCriacao(LocalDateTime now) {
+    }
+
+    public void setStatus(boolean b) {
+    }
 }
