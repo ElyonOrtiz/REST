@@ -1,6 +1,7 @@
-# REST API com Spring Boot e Spring Security
+# REST API Forum de Dúvida com Spring Boot e Spring Security
 
 Este projeto é uma API RESTful desenvolvida com **Spring Boot** e **Spring Security**, implementando autenticação e autorização de forma eficiente e seguindo os princípios de **stateless**. Utiliza **arquitetura baseada em Records**, tornando o código mais limpo e fácil de manter.
+Trata-se do final da formação em backend**ORACLE** + **Alura** cujo obtivo foi desenvolver uma api de forum de perguntas e resposta com as melhores práticas do mercado
 
 ---
 
@@ -71,25 +72,15 @@ Este projeto é uma API RESTful desenvolvida com **Spring Boot** e **Spring Secu
 ---
 
 ## Estrutura do Projeto
-
 ```plaintext
-src/main/java
-├── domain
-│   ├── usuario
-│   │   ├── Usuario.java
-│   │   ├── UsuarioRepository.java
-│   │   ├── UsuarioService.java
-│   │   └── UsuarioController.java
-│   ├── perfil
-│       ├── PerfilEnum.java
-│       └── PerfilService.java
-├── security
-│   ├── SecurityConfig.java
-│   ├── JwtService.java
-│   └── SecurityFilter.java
-└── REST
-    ├── Application.java
-    └── application.yml
+src/principal/java/ 
+└── br/com/alura/elyon/REST 
+ ├── config # Configurações de segurança e aplicativos 
+ ├── controller   # REST controllers for handling requests
+ ├── domínio # Lógica de negócios, entidades e registros principais 
+ ├── usuário # Entidades e repositórios relacionados ao usuário 
+ ├── perfil   # Profile-related enumerations and logic
+ └── infra        # Infrastructure and utility classes
 ```
 
 ### Detalhes da Arquitetura
@@ -128,7 +119,7 @@ src/main/java
 ---
 
 ## Autor
-Desenvolvido por [Seu Nome](https://github.com/seuusuario). Contribuições e feedbacks são bem-vindos!
+Desenvolvido por [Seu Nome](https://github.com/ElyonOrtiz). Contribuições e feedbacks são bem-vindos!
 
 ---
 
